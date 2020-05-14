@@ -1,3 +1,5 @@
+![TEMPLATE](https://github.com/nick-youngblut/py_pkg_template/workflows/TEMPLATE/badge.svg)
+
 TEMPLATE
 ========
 
