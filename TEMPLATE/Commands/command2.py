@@ -7,7 +7,7 @@ import sys
 import logging
 import argparse
 ## application
-from TEMPLATE.misc import misc_func
+from TEMPLATE.misc import misc_func2
 
 # init funcs
 def ParseArgs(test_args=None, subparsers=None, parents=[]):
@@ -28,6 +28,7 @@ def ParseArgs(test_args=None, subparsers=None, parents=[]):
                         help = 'Example string param (default: %(default)s)')
     parser.add_argument('-b', '--bool',  action = 'store_true',
                         help = 'Example bool param (default: %(default)s)')
+    parser.set_defaults(func = misc_func2)
 
     # test args
     if test_args:
