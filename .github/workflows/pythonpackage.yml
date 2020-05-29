@@ -24,7 +24,6 @@ jobs:
     - name: conda env setup
       shell: bash -l {0}
       run: |
-        pwd
         conda info -a
         conda install python=${{ matrix.python-version }} bioconda::hmmer pandas numpy
     - uses: actions/checkout@v2	
